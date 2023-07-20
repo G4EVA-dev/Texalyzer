@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/style.css" />
+
+    <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <title>Text Analysis</title>
+  </head>
+  <body>
+    <!-- !Header Goes Here that is Navbar and other stuff-->
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label for="logo" class="logo">Texalyzer</label>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Try it Now</a></li>
+        <li><a href="#">Contact US</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Feedback</a></li>
+      </ul>
+    </nav>
+
+    <div class="wrapper">
+      <h2>ANALYZE YOUR TEXT</h2>
+      <p>
+        Type or paste the text that you want to have analyzed into the box
+        below. After you click "Analyze" you will receive a select set of
+        Texalyzer results for your text. There is currently a 500 character
+        limit (approximately 1,000 words) on any given text. Your submitted text
+        may be saved and used to fine-tune future versions of Texalyzer.
+      </p>
+      <table>
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle;">
+              <b>How would you classify this text</b>
+            </td>
+            <td>
+              <select name="Classification" id="category">
+                <option value="">(Choose one)</option>
+                <option value="Personal">Personal Writing</option>
+                <option value="Formal">Formal Writing</option>
+                <option value="Story">Story</option>
+                <option value="Speech">Speech</option>
+                <option value="Email">Email</option>
+                <option value="other">Other</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top">
+              <b>Enter your Text Here:</b>
+            </td>
+            <td>
+              <textarea
+                name="Field"
+                maxlength="500"
+                id="text"
+                cols="70"
+                rows="15"
+                placeholder="Place/Write your Text in here "
+              ></textarea>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br />
+      <input class="btn" type="button" value="Analyze Text" />
+    </div>
+  </body>
+</html>
